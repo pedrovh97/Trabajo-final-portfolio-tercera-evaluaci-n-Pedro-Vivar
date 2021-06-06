@@ -1,0 +1,218 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;	
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contenedor{
+	height: 100vh;
+}
+	#cabecera {
+		display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+	}
+		#título {
+			width: 100%;
+	    height: 10%;
+	    background-color: beige;
+	    position: fixed;
+	    top: 0;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: wrap;
+	    justify-content: flex-start;
+		}
+			#nombre {
+				color: #818181;
+				margin: 20px;
+			}
+		#menu{
+	    width: 60%;
+	    height: 10%;
+	    background-color: beige;
+	    position: fixed;
+	    top: 0;
+	    display: flex;
+	    justify-content: flex-end;
+	    flex-direction: row;
+		}
+
+			#menu a{
+				padding: 10px;
+				text-decoration: none;
+				font-size: 30px;
+				color: #818181;
+			}
+	
+	#contenido{
+		width: auto;
+    margin-top: 4%;
+	}
+
+		#bloque-1, #bloque-2, #bloque-3{
+			height: 800px;
+		}
+
+
+		#bloque-1{
+ 			transition: 2s;
+			animation: wipe-in-left;
+		  animation-duration: 5s;
+		  animation-fill-mode: both;
+	    background: #59d69c;
+	    display: flex;
+	    flex-direction: column;
+	    align-content: flex-start;
+	    align-items: flex-start;
+	    justify-content: center;
+	    padding-left: 200px;
+	    font-size: 30px;
+	    color: #5a5555;
+		}
+			#contenido-inicio {
+				margin-bottom: 20px;
+			}
+
+		#bloque-2{
+			background: #26bdf7;
+			display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    align-items: center;
+	    justify-content: space-evenly;
+		}
+			#contenido-centro {
+		    font-size: 3rem;
+		    margin-top: 3%;
+		    color: #ffffff;
+		    -webkit-text-stroke: 2.5px black;
+   		}
+   		#contenido-centro1 {
+		    display: flex;
+		    flex-direction: row;
+		    flex-wrap: nowrap;
+		    align-items: center;
+			}
+ 				.tarjeta {
+ 					transition: 0.3s;
+ 					height: 500px;
+			    background-color: #8bc34a;
+			    padding: 5%;
+			    margin: 5%;
+			    border: 2px solid #06690a;
+			    border-radius: 5px;
+			    color: black;
+ 				}
+ 					.img-proyecto {
+ 						width: 400px;
+ 						height: 200px;
+ 					}
+ 					h4 {
+						margin-top: 4%;
+    				font-size: 1.5rem;
+    				color: white;
+ 					}
+ 					p {
+ 						font-family: 'Lato', sans-serif;
+ 						margin-top: 20px;
+ 						margin-bottom: 20px;
+ 						color: white;
+ 					}
+ 					.botones {
+ 						display: flex;
+ 					}
+ 						.img-enlace {
+ 							max-width: 10%;
+ 							margin-right: 20px;
+ 						}
+
+		#bloque-3{
+	    background: #108014;
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    align-content: center;
+	    align-items: center;
+		}
+			#contenido-pie {
+		    font-size: 3rem;
+		    margin-bottom: 3%;
+		    color: #24d4ea;
+		    -webkit-text-stroke: 2.5px black;
+   		}
+			#contenido-pie1 {
+		    display: flex;
+		    flex-direction: row;
+		    flex-wrap: wrap;
+		    align-items: center;
+    			}
+				#correo {
+   				margin: 20px;
+				}
+   			#github {
+   				width: 50px;
+   				height: 50px;
+   				margin: 20px;
+   			}
+   			#instagram {
+   				width: 70px;
+   				height: 40px;
+   				margin: 20px;
+   			}
+   			#facebook {
+   				width: 60px;
+   				height: 60px;
+   				margin: 20px;
+   			}
+
+   			@media (max-width: 750px) {
+   				#menu a {
+   			    margin-top: 12px;
+   			    font-size: 15px;
+   			   }
+   			  #nombre {
+				    margin-top: 23px;
+				    font-size: 14px;
+					}
+					#bloque-1 {
+				    padding-left: 50px;
+					}
+					#bloque-2 {
+						height: auto;
+					}
+					#contenido-centro {
+					    font-size: 40px;
+					    text-align: center;
+					    margin-top: 25%;
+					}
+					#contenido-centro1 {
+					    display: flex;
+					    flex-direction: column;
+					    flex-wrap: nowrap;
+					    align-items: center;
+					}
+					.tarjeta {
+				    height: 350px;
+				    width: 300px;
+    			}
+					.img-proyecto {
+					    width: 265px;
+					    height: 165px;
+					}
+					#contenido-pie {
+				    text-align: center;
+    			}
+					#contenido-pie1 {
+					    justify-content: center;
+					}
+					#correo {
+					    margin: 40px;
+					}
+}
